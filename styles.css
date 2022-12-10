@@ -1,0 +1,342 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #262626;
+    height: 100%;
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+ }
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px ,.3fr) 2fr;
+    grid-template-rows: minmax(200px, .5fr) 3fr;
+    background-color: #404040;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    font-family: "Cairo";
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    background-color: #171717;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+}
+
+.sidebar img {
+    height: 20px;
+    width: 20px;
+    padding-right: .5rem;
+}
+
+#dashboard {
+    height: 30px;
+    width: 30px;
+}
+
+.sidebar-options1, .sidebar-options2{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-top: 15%;
+    gap: .75rem;
+    list-style: none;
+}
+
+.navbar {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: .25fr .5fr;
+    background-color: #262626;
+    color: white;
+}
+
+.projects {
+    background-color: #404040;
+    color: white; 
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.projects h1 {
+    font-size: 1.5rem;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+#projects {
+    font-family: "Roboto Mono";
+}
+
+.project-element {
+    display: flex;
+    flex-direction: column;
+    background-color: #71717a;
+    border-style: solid;
+    border-color: #171717bc;
+    border-width: 1px;
+    border-radius: 25px;
+    margin: 1rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+.project-element img {
+    height: 20px;
+    width: 20px;  
+    margin-bottom: 1rem;  
+}
+
+.project-element h1 {
+    font-family: "Mukta";
+    font-size: 1rem;
+    margin: 1.5rem;
+    margin-bottom: 0;
+}
+
+.project-element p {
+    font-family: "Proza Libre";
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: .9rem;
+}
+
+.project-element div {
+    display: flex;
+    gap: .5rem;
+    margin-top: 4rem;
+    margin-right: 1.5rem;
+    align-self: flex-end;
+}
+
+.announcements {
+    background-color: #404040;
+    color: white;
+    padding-top: 2rem;
+}
+
+#announcements {
+    font-family: "Roboto Mono";
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.announcement-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #71717a;
+    border-radius: 25px;
+    height: fit-content;
+    width: 90%;
+    border-style: solid;
+    border-color: #171717bc;
+    border-width: 1px;
+}
+
+.announcements h1 {
+    font-size: 1.5rem;
+}
+
+.annoucement-element {
+    list-style: none;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#bottom {
+    padding-bottom: 1.5rem;
+}
+
+.annoucement-element h1 {
+    font-family: "Proza Libre";
+    font-size: .9rem;
+}
+
+.annoucement-element p {
+    font-family: "Proza Libre";
+    font-size: .7rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-container button {
+    display: flex;
+    font-family: "Overpass";
+    font-size: 1rem;
+    margin: 1rem;
+    border-radius: 500px;
+    height: 30px;
+    width: 85px;
+    background-color: #e4e4e7;
+    border: none;
+    justify-content: center;
+    padding-top: 1.2%;
+}
+
+.searchbar {
+    display: flex;
+    height: 30%;
+    align-items: center;
+    align-self: center;
+    margin-left: 5%;
+}
+
+#searchbar {
+    height: 30px;
+    width: 100%;
+    border-radius: 500px;
+    background-color: #404040;
+    opacity: 90%;
+    color: white;
+    font-size: 1rem;
+}
+
+.searchbar img {
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.profile-container {
+    display: flex;
+    font-family: "Overpass";
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.bell {
+    height: 20px;
+    width: 20px;
+}
+
+.profile-container p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.profile-container2 {
+    display: flex;
+    font-family: "Overpass";
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.pfp {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.pfp2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.trending {
+    background-color: #404040; 
+    color: #e5e5e5;
+    height: inherit;
+}
+
+.trending h1 {
+    font-size: 1.5rem;
+}
+
+.trending-container {
+    background-color: #71717a;
+    border-radius: 25px;
+    width: 90%;
+    border-style: solid;
+    border-color: #171717bc;
+    border-width: 1px;
+}
+
+.trending-element {
+    list-style: none;
+    padding: .8rem;
+    padding-left: 1rem;
+    padding-right: 0;
+    justify-content: space-between;
+}
+
+.trending-element img {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    margin-right: 1rem;
+}
+
+.trending-element h1 {
+    font-family: "Mukta";
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.trending-element p {
+    font-family: "Proza Libre";
+    font-size: .7rem;
+}
+
+#trending {
+    font-family: "Roboto Mono";
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+}
+
+.right-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
